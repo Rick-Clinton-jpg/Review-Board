@@ -30,9 +30,16 @@ This is disclosed here for the same reason the skill itself insists on disclosed
 
 ## Installation
 
-Copy `SKILL.md` into `~/.claude/skills/review-board/SKILL.md` for a personal skill available across all projects, or into `.claude/skills/review-board/SKILL.md` within a specific project to scope it there.
+**Manual:** copy `SKILL.md` into `~/.claude/skills/review-board/SKILL.md` for a personal skill available across all projects, or into `.claude/skills/review-board/SKILL.md` within a specific project to scope it there. Invoke with `/review-board`.
 
-Invoke with `/review-board`.
+**Via plugin marketplace:** this repo is also registered as a Claude Code plugin marketplace.
+
+```
+/plugin marketplace add Rick-Clinton-jpg/Review-Board
+/plugin install review-board@review-board
+```
+
+Note: plugin-installed skills are namespaced by plugin name, so the installed command is `/review-board:review-board`, not the bare `/review-board` shown above. The manual install path is the one that gives you the bare `/review-board` command.
 
 ## License
 
